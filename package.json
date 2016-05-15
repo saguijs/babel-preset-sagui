@@ -1,0 +1,27 @@
+{
+  "name": "babel-preset-sagui",
+  "version": "6.5.0",
+  "description": "Sagui Babel preset",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "keywords": [
+    "babel",
+    "es2015",
+    "preset",
+    "react",
+    "sagui",
+    "webpack"
+  ],
+  "author": "Paulo Ragonha",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0"
+  },
+  "devDependencies": {
+    "standard": "^7.0.1"
+  }
+}
