@@ -1,7 +1,44 @@
 module.exports = {
   presets: [
-    require('babel-preset-es2015'),
     require('babel-preset-react'),
     require('babel-preset-stage-0')
+  ],
+
+  /**
+   * babel-preset-es2015 plugins
+   */
+  plugins: [
+    require('babel-plugin-transform-es2015-template-literals'),
+    require('babel-plugin-transform-es2015-literals'),
+    require('babel-plugin-transform-es2015-function-name'),
+    require('babel-plugin-transform-es2015-arrow-functions'),
+    require('babel-plugin-transform-es2015-block-scoped-functions'),
+    require('babel-plugin-transform-es2015-object-super'),
+    require('babel-plugin-transform-es2015-shorthand-properties'),
+    require('babel-plugin-transform-es2015-duplicate-keys'),
+    require('babel-plugin-transform-es2015-computed-properties'),
+    require('babel-plugin-transform-es2015-for-of'),
+    require('babel-plugin-transform-es2015-sticky-regex'),
+    require('babel-plugin-transform-es2015-unicode-regex'),
+    require('babel-plugin-check-es2015-constants'),
+    require('babel-plugin-transform-es2015-spread'),
+    require('babel-plugin-transform-es2015-parameters'),
+    require('babel-plugin-transform-es2015-destructuring'),
+    require('babel-plugin-transform-es2015-block-scoping'),
+    require('babel-plugin-transform-es2015-typeof-symbol'),
+    require('babel-plugin-transform-es2015-modules-commonjs'),
+    [require('babel-plugin-transform-regenerator'), { async: false, asyncGenerators: false }],
+
+    /*
+     * We need to use loose mode for transform-es2015-classes to support
+     * super calls for classes in IE9 and IE10.
+     *
+     * transform-proto-to-assign is a workaround in order to support
+     * static property inheritance in IE9 and IE10.
+     *
+     * @see https://babeljs.io/docs/usage/caveats/
+     */
+    [require('babel-plugin-transform-es2015-classes'), { loose: true }],
+    require('babel-plugin-transform-proto-to-assign')
   ]
 }
