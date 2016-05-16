@@ -5,8 +5,10 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 [![Code Climate](https://codeclimate.com/github/saguijs/babel-preset-sagui/badges/gpa.svg)](https://codeclimate.com/github/saguijs/babel-preset-sagui)
 
-[Babel](http://babeljs.io/) preset used by [Sagui](http://sagui.js.org/), it contains:
+[Babel](http://babeljs.io/) preset used by [Sagui](http://sagui.js.org/), it is based on:
 
 - [es2015](http://babeljs.io/docs/plugins/preset-es2015/)
 - [react](http://babeljs.io/docs/plugins/preset-react/)
 - [stage-0](http://babeljs.io/docs/plugins/preset-stage-0/)
+
+But, with [additional configuration](https://babeljs.io/docs/usage/caveats/) to better support IE9 and IE10.
