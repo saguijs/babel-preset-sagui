@@ -6,8 +6,8 @@ module.exports = {
   /**
    * babel-preset-es2015 plugins
    *
-   * We need to import all plugin explicitly to support loose mode
-   * for babel-plugin-trasnform-es2015-classes
+   * We need to import all plugin explicitly to be able to use
+   * loose mode for babel-plugin-transform-es2015-classes
    *
    * @see https://babeljs.io/docs/usage/caveats/
    */
@@ -32,6 +32,7 @@ module.exports = {
     require('babel-plugin-transform-es2015-block-scoping'),
     require('babel-plugin-transform-es2015-typeof-symbol'),
     require('babel-plugin-transform-es2015-modules-commonjs'),
+    require('babel-plugin-transform-proto-to-assign'),
     [require('babel-plugin-transform-regenerator'), { async: false, asyncGenerators: false }],
   ]
 }
