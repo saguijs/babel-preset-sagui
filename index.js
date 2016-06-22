@@ -4,10 +4,10 @@ module.exports = {
     require('babel-preset-stage-0')
   ],
 
-  /**
-   * babel-preset-es2015 plugins
-   */
   plugins: [
+    /**
+     * babel-preset-es2015 plugins
+     */
     require('babel-plugin-transform-es2015-template-literals'),
     require('babel-plugin-transform-es2015-literals'),
     require('babel-plugin-transform-es2015-function-name'),
@@ -39,6 +39,11 @@ module.exports = {
      * @see https://babeljs.io/docs/usage/caveats/
      */
     [require('babel-plugin-transform-es2015-classes'), { loose: true }],
-    require('babel-plugin-transform-proto-to-assign')
+    require('babel-plugin-transform-proto-to-assign'),
+
+    /**
+     * flowtype plugin
+     */
+    require('babel-plugin-transform-flow-strip-types')
   ]
 }
