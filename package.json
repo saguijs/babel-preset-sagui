@@ -46,11 +46,9 @@
   "devDependencies": {
     "babel-core": "^6.8.0",
     "babel-eslint": "^6.0.5",
-    "eslint-plugin-flowtype": "^2.2.7",
     "standard": "^7.0.1"
   },
   "standard": {
-    "parser": "babel-eslint",
-    "plugins": ["flowtype"]
+    "parser": "babel-eslint"
   }
 }
