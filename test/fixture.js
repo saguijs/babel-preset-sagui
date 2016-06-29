@@ -1,5 +1,5 @@
 type TheA = {
-  a : number,
+  a: number,
   b: string
 }
 
@@ -9,7 +9,7 @@ class A {
   }
 }
 
-const createTheA = () : TheA => ({
+const createTheA = (): TheA => ({
   a: 10,
   b: 'text'
 })
