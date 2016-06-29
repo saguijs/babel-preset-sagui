@@ -37,6 +37,7 @@
     "babel-plugin-transform-es2015-template-literals": "^6.6.0",
     "babel-plugin-transform-es2015-typeof-symbol": "^6.6.0",
     "babel-plugin-transform-es2015-unicode-regex": "^6.3.13",
+    "babel-plugin-transform-flow-strip-types": "^6.8.0",
     "babel-plugin-transform-proto-to-assign": "^6.8.0",
     "babel-plugin-transform-regenerator": "^6.6.0",
     "babel-preset-react": "^6.5.0",
@@ -44,6 +45,10 @@
   },
   "devDependencies": {
     "babel-core": "^6.8.0",
+    "babel-eslint": "^6.0.5",
     "standard": "^7.0.1"
+  },
+  "standard": {
+    "parser": "babel-eslint"
   }
 }
