@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-sagui",
-  "version": "6.6.0",
+  "version": "6.6.1",
   "description": "Sagui Babel preset",
   "main": "index.js",
   "scripts": {
